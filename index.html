@@ -20,7 +20,9 @@
         <div class="col">
           <nav id="navbar">
             <ul class="nav flex-column">
-             <header>How to import goods abroad</header>
+<!--              <header>How to import goods abroad</header> -->
+		                  <h1>This site has been visited <span id="visits"></span> times.</h1>
+
               <li class="nav-item">
                 <a class="nav-link introduction" href="#Introduction">Introduction</a>
               </li>
@@ -453,5 +455,10 @@
       </div>
      </div>
     </div>
+	    <script>
+  function websiteVisits(response) {
+    document.querySelector("#visits").textContent = response.value;
+}
+</script>
      </body>   
 </html>
